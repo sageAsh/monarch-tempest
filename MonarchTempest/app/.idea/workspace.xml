@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a27d92d-8e8c-4e91-9201-87b96178a971" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/androidTest/java/org/aph/monarchhelloworld/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/Constants.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/MonarchHelloWorldApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/XmlResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/BrailleTranslationMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/BrailleTranslatorActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/DialogSampleActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/GridExampleActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/LayoutMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/SelfBraillingActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/SelfBraillingMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/TextEditActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/activities/TitleScreenExampleActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/contextmenu/HWDialogLongSMActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/contextmenu/HWDialogSubMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/contextmenu/NativeDialogLongSMActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/contextmenu/NativeDialogSubMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/contextmenu/SelfBraillingContextMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/contextmenu/SimpleContextMenuActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/interfaces/SelfBraillingInterface.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/model/SelfBraillingDrawing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/BrailleUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/BrlFormatter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/BrlScrollView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/CustomGraphicsFunc.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/DialogHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/Drawing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/GridUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/ImageUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/Position.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/java/org/aph/monarchhelloworld/monarch_utils/enums/ResultCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/layout/text_edit_activity_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/raw/burger.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/raw/commands.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/raw/sun.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values/strings_braille_translator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values/strings_context_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values/strings_dialog_sample.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/app/src/test/java/org/aph/monarchhelloworld/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MonarchHelloWorld/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3Ccy0mBka1ESqxYieahIqOeTH5m" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "sdkTestTool",
+    "last_opened_file_path": "C:/Users/mmcdonald/Desktop/hackathon/monarch-tempest/MonarchTempest/app/build.gradle.kts",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a27d92d-8e8c-4e91-9201-87b96178a971" name="Changes" comment="" />
+      <created>1776698931748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776698931748</updated>
+    </task>
+    <servers />
+  </component>
+</project>
