@@ -10,9 +10,10 @@ import com.humanware.keysoftsdk.translator.Translator
 import com.humanware.keysoftsdk.translator.aidl.TranslationQuery
 
 class BrailleUtil {
-    companion object{
+    companion object {
         /**
-         * Translates plain text string into unicode braille string
+         * Translates a plain text string into a unicode braille string using the
+         * current system translator preferences.
          *
          * @param input String object which contains the plain text to be translated.
          * @param translator HumanWare Translator object that performs the translation.
@@ -20,39 +21,45 @@ class BrailleUtil {
          *
          * @return Unicode Braille String of the original string that was passed in.
          */
-        fun translate(input: String, translator: Translator, setBack:Boolean = false): String {
+        fun translate(input: String, translator: Translator, setBack: Boolean = false): String {
             var res = ""
-            val query = TranslationQuery()
-            //query.grade = BrailleGrade.GRADE_UNCONTRACTED //If you want to specify the braille grade to translate into.
-            query.isBack = setBack
+            val query = TranslationQuery().apply {
+                // Dynamically fetch and respect the user's configured system braille grade
+                grade = getBrailleGrade(translator)
+                isBack = setBack
+            }
+
             val lines = input.lines()
             for (line in lines) {
                 query.original = line
                 translator.translate(query)
                 res += query.translated + "\n"
             }
-            res= res.trimEnd('\n') //no trailing \n
-
-            return res
+            return res.trimEnd('\n')
         }
 
-
         /**
-         * Gets the current braille grade.
+         * Dynamically queries the current system configuration from the Monarch SDK translator instance.
          *
          * @param translator HumanWare Translator object that performs the translation.
-         *
-         * @return An Integer indicating Uncontracted/Contracted. Compare to BrailleGrade.GRADE_UNCONTRACTED, BrailleGrade.GRADE_CONTRACTED, BrailleGrade.GRADE_COMPUTER_BRAILLE, or BrailleGrade.UNSPECIFIED.
+         * @return An Integer matching BrailleGrade enum values.
          */
-        fun getBrailleGrade(translator: Translator): Int{
-            val translationQuery = translator.forwardTranslate("a", 0)
-            var brailleGrade = BrailleGrade.GRADE_UNSPECIFIED
-
-            if(translationQuery != null){
-                brailleGrade = translationQuery.grade
+        fun getBrailleGrade(translator: Translator): Int {
+            // Run an empty forward translation query without forcing magic/zero flags
+            // to allow the SDK engine to supply its globally configured user preference profile.
+            val query = TranslationQuery().apply {
+                original = " "
+                grade = BrailleGrade.GRADE_UNSPECIFIED
             }
 
-            return brailleGrade
+            translator.translate(query)
+
+            // Fall back safely to GRADE_UNSPECIFIED if the response profile isn't available
+            return if (query.grade != BrailleGrade.GRADE_UNSPECIFIED) {
+                query.grade
+            } else {
+                BrailleGrade.GRADE_UNSPECIFIED
+            }
         }
     }
 }
