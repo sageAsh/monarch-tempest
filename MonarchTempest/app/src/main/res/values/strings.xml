@@ -4,25 +4,27 @@
   -->
 
 <resources>
-    <string name="app_name">Tempest</string>
-    <string name="title_part_1">Tempest</string>
+    <string name="app_name">Monarch Weather</string>
+    <string name="title_part_1">WEATHER</string>
     <string name="title_part_2">APP</string>
 
     <string name="enter_statement">Press Enter</string>
 
     <!--Menu Titles-->
-    <string name="main_menu">Main Menu</string>
-    <string name="braille_translation_menu">Braille Translation Menu</string>
-    <string name="self_brailling_widget_menu_title">SelfBraillingWidget Menu</string>
-    <string name="layout_examples_menu_title">Layout Menu</string>
+    <string name="weather_menu">Weather Menu</string>
+    <string name="map_menu">Map</string>
+    <string name="current_condition_menu_title">Current Conditions</string>
+    <string name="forecast_menu_title">Forecast</string>
 
-
-    <string name="self_brailling_widget_activity">Self Brailling Widget Activity</string>
 
     <!--Main Activity Menu Items-->
-    <string name="self_brailling_samples">SelfBraillingWidget Samples</string>
-    <string name="layout_samples">Layout Samples</string>
-    <string name="braille_translation_sample">Braille Translation Samples</string>
+    <string name="current_conditions">Current Conditions</string>
+    <string name="forecast">Forecast</string>
+    <string name="map">Map</string>
+
+    <string name="show_currentCond_text">Text</string>
+    <string name="show_currentCond_graphic">Graphic</string>
+
 
     <!--SelfBraillingWidget Menu Items-->
     <string name="show_image_example">Simple Image Example</string>

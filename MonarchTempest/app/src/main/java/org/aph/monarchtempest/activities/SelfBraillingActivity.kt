@@ -98,7 +98,7 @@ class SelfBraillingActivity : AppCompatActivity() {
 
         manager = SelfBraillingManager(this).apply { bindService() }
         widget = SelfBraillingWidget(this).also { setContentView(it) }
-        title = getString(R.string.self_brailling_widget_activity)
+//        title = getString(R.string.self_brailling_widget_activity)
 
         // This ensures we have access to the full screen without any overlapping bars.
         supportActionBar?.hide()
@@ -200,7 +200,7 @@ class SelfBraillingActivity : AppCompatActivity() {
             KeyEvent.KEYCODE_PAGE_DOWN -> {
                 scrollHandled = handleScroll(keyCode)
             }
-            
+
             KeyEvent.KEYCODE_MOVE_HOME -> {
                 scrollHandled = handleScroll(keyCode)
             }
@@ -344,7 +344,7 @@ class SelfBraillingActivity : AppCompatActivity() {
 
 
     /**
-    * Translates plain text into unicode braille. This will use the device language and selected braille tables to create the braille.
+     * Translates plain text into unicode braille. This will use the device language and selected braille tables to create the braille.
      * It has the option to back translate (braille to plain text), but it may not work properly depending on the language selected.
      *
      * @param input The string to be translated
@@ -370,8 +370,8 @@ class SelfBraillingActivity : AppCompatActivity() {
 
 
     /**
-    * Special version for translating to Unicode braille for the BrlScrollView class
-    * Translates plain text into unicode braille. This will use the device language and selected braille tables to create the braille.
+     * Special version for translating to Unicode braille for the BrlScrollView class
+     * Translates plain text into unicode braille. This will use the device language and selected braille tables to create the braille.
      *
      * @param input The string to be translated
      *

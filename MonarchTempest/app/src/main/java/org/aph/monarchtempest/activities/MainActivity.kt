@@ -37,7 +37,7 @@ class MainActivity : AbstractMenuActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTitle(TempestAppR.string.main_menu)
+        setTitle(TempestAppR.string.weather_menu)
     }
 
     /**
@@ -45,7 +45,7 @@ class MainActivity : AbstractMenuActivity() {
      *
      * @return the resource id for the string corresponding to the menu's title
      */
-    override fun getTitleId() = TempestAppR.string.main_menu
+    override fun getTitleId() = TempestAppR.string.weather_menu
 
 
     /**
@@ -79,16 +79,16 @@ class MainActivity : AbstractMenuActivity() {
     private fun inflateSettingItemLayout(): AccessibleListView {
         return findViewById<AccessibleListView>(sdkR.id.settings_listview).apply {
             //Add items to the list view
-            setNext(makeAccessibleItem(TempestAppR.string.self_brailling_samples))
-            setNext(makeAccessibleItem(TempestAppR.string.layout_samples))
-            setNext(makeAccessibleItem(TempestAppR.string.braille_translation_sample))
+            setNext(makeAccessibleItem(TempestAppR.string.current_conditions))
+            setNext(makeAccessibleItem(TempestAppR.string.forecast))
+            setNext(makeAccessibleItem(TempestAppR.string.map))
 
 
             setOnItemClickListener { _, _, position, _ ->
                 val targetActivity = when (position) {
-                    0 -> SelfBraillingMenuActivity::class.java
+                    0 -> CurrentCondition::class.java
                     1 -> null
-                    2 -> null
+                    2 -> Map::class.java
                     else -> null
                 }
 
@@ -124,6 +124,9 @@ class MainActivity : AbstractMenuActivity() {
             KeyEvent.KEYCODE_MENU -> {
                 val intent = Intent(this, SimpleContextMenuActivity::class.java)
                 startContextMenu.launch(intent)
+            }
+            KeyEvent.KEYCODE_BACK -> {
+
             }
         }
 

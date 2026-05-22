@@ -16,7 +16,7 @@ import com.humanware.keysoftsdk.ui.menu.accessibleitem.attributes.AccessibleItem
 class BrailleTranslationMenuActivity: AbstractMenuActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTitle(org.aph.monarchtempest.R.string.main_menu)
+        setTitle(org.aph.monarchtempest.R.string.weather_menu)
     }
 
     /**
@@ -24,7 +24,7 @@ class BrailleTranslationMenuActivity: AbstractMenuActivity() {
      *
      * @return the resource id for the string corresponding to the menu's title
      */
-    override fun getTitleId() = org.aph.monarchtempest.R.string.main_menu
+    override fun getTitleId() = org.aph.monarchtempest.R.string.weather_menu
 
 
     /**
@@ -58,16 +58,16 @@ class BrailleTranslationMenuActivity: AbstractMenuActivity() {
     private fun inflateSettingItemLayout(): AccessibleListView {
         return findViewById<AccessibleListView>(R.id.settings_listview).apply {
             //Add items to the list view
-            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.self_brailling_samples))
-            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.layout_samples))
-            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.braille_translation_sample))
+            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.current_conditions))
+            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.forecast))
+            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.map))
 
 
             setOnItemClickListener { _, _, position, _ ->
                 val targetActivity = when (position) {
-                    0 -> SelfBraillingMenuActivity::class.java
+                    0 -> CurrentCondition::class.java
                     1 -> null
-                    2 -> null
+                    2 -> Map::class.java
                     else -> null
                 }
 
@@ -92,10 +92,10 @@ class BrailleTranslationMenuActivity: AbstractMenuActivity() {
                                    labelId: Int = R.id.textview): AccessibleItem {
         return AccessibleItem(
             AccessibleItemAttributes(
-            resources.getString(labelNameId),
-            layoutId,
-            labelId
-        )
+                resources.getString(labelNameId),
+                layoutId,
+                labelId
+            )
         )
     }
 }
