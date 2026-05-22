@@ -22,6 +22,7 @@
     <string name="forecast">Forecast</string>
     <string name="map">Map</string>
 
+    <!--Current Condition Activity Menu Items-->
     <string name="show_currentCond_text">Text</string>
     <string name="show_currentCond_graphic">Graphic</string>
 

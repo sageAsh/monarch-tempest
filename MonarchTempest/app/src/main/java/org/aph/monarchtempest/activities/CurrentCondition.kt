@@ -7,48 +7,70 @@ package org.aph.monarchtempest.activities
 
 import android.content.Intent
 import android.os.Bundle
-import com.humanware.keysoftsdk.R
 import com.humanware.keysoftsdk.ui.menu.AbstractMenuActivity
 import com.humanware.keysoftsdk.ui.menu.AccessibleListView
 import com.humanware.keysoftsdk.ui.menu.accessibleitem.AccessibleItem
 import com.humanware.keysoftsdk.ui.menu.accessibleitem.attributes.AccessibleItemAttributes
+import com.humanware.keysoftsdk.R as sdkR
+import org.aph.monarchtempest.R as demoR
 
 /**
  * Entry point for the "Current Conditions" section of the weather app.
  *
- * Contains an item that takes the user directly to [CurrentWeatherActivity], which fetches
- * and displays live weather data from the Open-Meteo API in braille.
+ * Allows the user to choose between displaying the live weather from the
+ * Open-Meteo API as scrollable text or as a tactile graphic icon with a label.
  */
 class CurrentCondition : AbstractMenuActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTitle(org.aph.monarchtempest.R.string.current_condition_menu_title)
+        title = getString(demoR.string.current_condition_menu_title)
     }
 
-    override fun getTitleId() = org.aph.monarchtempest.R.string.current_condition_menu_title
+    /**
+     * Gets the resource id for the menu's title.
+     */
+    override fun getTitleId() = demoR.string.current_condition_menu_title
 
+    /**
+     * Initializes the menu and specifies the item sorting strategy.
+     */
     override fun initialize(): AccessibleListView.Sort {
         listview = inflateSettingItemLayout()
         return AccessibleListView.Sort.BY_POSITION
     }
 
+    /**
+     * Inflates the accessible list items for the sub-menu.
+     */
     private fun inflateSettingItemLayout(): AccessibleListView {
-        return findViewById<AccessibleListView>(R.id.settings_listview).apply {
-            setNext(makeAccessibleItem(org.aph.monarchtempest.R.string.show_currentCond_text))
+        return findViewById<AccessibleListView>(sdkR.id.settings_listview).apply {
+            // Add "Text" option (Position 0)
+            setNext(makeAccessibleItem(demoR.string.show_currentCond_text))
+            // Add "Graphic" option (Position 1)
+            setNext(makeAccessibleItem(demoR.string.show_currentCond_graphic))
 
             setOnItemClickListener { _, _, position, _ ->
-                when (position) {
-                    0 -> startActivity(Intent(this@CurrentCondition, CurrentWeatherActivity::class.java))
+                val intent = when (position) {
+                    0 -> Intent(this@CurrentCondition, CurrentWeatherActivity::class.java)
+                    1 -> Intent(this@CurrentCondition, CurrentWeatherGraphicActivity::class.java)
+                    else -> null
+                }
+
+                if (intent != null) {
+                    startActivity(intent)
                 }
             }
         }
     }
 
+    /**
+     * Creates an [AccessibleItem] to be displayed in the menu.
+     */
     private fun makeAccessibleItem(
         labelNameId: Int,
-        layoutId: Int = R.layout.one_textview,
-        labelId: Int  = R.id.textview
+        layoutId: Int = sdkR.layout.one_textview,
+        labelId: Int = sdkR.id.textview
     ): AccessibleItem {
         return AccessibleItem(
             AccessibleItemAttributes(
