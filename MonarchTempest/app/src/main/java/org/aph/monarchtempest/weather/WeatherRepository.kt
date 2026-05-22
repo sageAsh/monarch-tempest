@@ -85,7 +85,7 @@ data class CurrentWeather(
  */
 object WeatherRepository {
 
-    // San Juan, Puerto Rico (shout out Manola :D) as default fallback location
+    // SF as default fallback location
     private const val DEFAULT_LAT = 37.7823
     private const val DEFAULT_LON = 122.3912
 
