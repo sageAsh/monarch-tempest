@@ -150,31 +150,33 @@ class CurrentWeatherGraphicActivity : AppCompatActivity() {
             // Sunny / Clear Sky
             0, 1 -> TempestAppR.raw.sun
 
-//            // Cloudy / Overcast
-//            2, 3 -> TempestAppR.raw.cloud
+            // Cloudy / Overcast
+            2, 3 -> TempestAppR.raw.cloud
 
             // Foggy
             45, 48 -> TempestAppR.raw.fog
 
-//            // Light Rain / Drizzle (Fewer drops)
-//            51, 53, 61, 80 -> TempestAppR.raw.rain_light
-//
+            // Light Rain / Drizzle (fix this to be a cloud with rain)
+             51, 53, 61, 80 -> TempestAppR.raw.rain_light
+
 //            // Moderate Rain (Standard drop pattern)
 //            55, 63, 81 -> TempestAppR.raw.rain_moderate
 //
-//            // Heavy Rain / Showers (Dense drop pattern across pins)
-//            65, 82 -> TempestAppR.raw.rain_heavy
+            // Heavy Rain / Showers (Dense drop pattern across pins)
+            65, 82 -> TempestAppR.raw.rain_heavy
 //
-//            // Thunder / Lightning Storm
-//            95, 96, 99 -> TempestAppR.raw.lightning
-//
+            // Thunder / Lightning Storm
+            95, 96, 99 -> TempestAppR.raw.lightning
+
 //            // Light Snow / Grains / Light Showers
-//            71, 77, 85 -> TempestAppR.raw.snow_light
+//            // MUST FIX
+//             71, 77, 85 -> TempestAppR.raw.snow_light
 //
 //            // Heavy Snow / Fall / Heavy Showers
+//            // MUST FIX
 //            73, 75, 86 -> TempestAppR.raw.snow_heavy
 
-            else -> TempestAppR.raw.sun
+            else -> TempestAppR.raw.question_mark
         }
     }
 

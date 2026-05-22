@@ -64,6 +64,11 @@
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
 
         <activity
+            android:name=".activities.CurrentWeatherGraphicActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+
+        <activity
             android:name=".activities.BrailleTranslatorActivity"
             android:exported="false"/>
 
