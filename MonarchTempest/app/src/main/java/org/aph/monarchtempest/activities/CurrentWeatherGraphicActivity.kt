@@ -148,10 +148,10 @@ class CurrentWeatherGraphicActivity : AppCompatActivity() {
     private fun getWeatherIconResource(code: Int): Int {
         return when (code) {
             // Sunny / Clear Sky
-            0, 1 -> TempestAppR.raw.sun
+            0, 1,2,3 -> TempestAppR.raw.sun
 
             // Cloudy / Overcast
-            2, 3 -> TempestAppR.raw.cloud
+//            2, 3 -> TempestAppR.raw.cloud
 
             // Foggy
             45, 48 -> TempestAppR.raw.fog
